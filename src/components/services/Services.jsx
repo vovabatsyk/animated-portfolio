@@ -21,7 +21,7 @@ const variants = {
 
 const Services = () => {
   const ref = useRef();
-  const isInView = useInView(ref, "-100px");
+  // const isInView = useInView(ref, "-100px");
 
   return (
     <motion.div
@@ -29,7 +29,7 @@ const Services = () => {
       variants={variants}
       initial="initial"
       ref={ref}
-      animate={isInView && "animate"}
+      animate={  "animate"}
       // whileInView="animate"
     >
       <motion.div className="textContainer">
